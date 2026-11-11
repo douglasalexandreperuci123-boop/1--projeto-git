@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet"  href="style.css"/>
+   
+    <title>Convert Money</title>
+  </head>
+  <body>
+    <img class="logo" src="./assets/logo.gif" alt="logo-convert-money" />
+
+    <main>
+      <label>
+        Converter <b>de</b>
+        <select class="currency-options">
+          <option value="BRL">R$ Real Brasileiro</option>
+          <option value="USD">US$ Dólar Americano</option>
+          <option value="EUR">€ Euro</option>
+          <option value="GBP">£Libra</option>
+
+        </select>
+      </label>
+      <label>
+        Converter <b>para</b>
+        <select class="currency-select">
+          <option value="BRL">R$ Real Brasileiro </option>
+          <option value="USD">US$ Dólar Americano</option>
+          <option value="EUR">€ Euro</option>
+          <option value="GBP">£Libra</option>
+        </select>
+      </label>
+      <label>
+        Valor
+        <input class="input-currency" placeholder="Digite o valor" />
+      </label>
+      <button class="convert-Button">Converter</button>
+      <section>
+        <div class="currency-box">
+          <img class="Moeda" src="./assets/Real.png" alt="Real-a-converter" />
+          <p class="currency"></p>
+          <p class="currency-value-to-convert"></p>
+        </div>
+        <img class="arrow-img" src="./assets/Seta.jpg" alt="Seta" />
+        <div>
+          <img class="currency-img" src="./assets/Dolar.png" alt="Dólar-convertido" />
+          <p class="currency" id="currency-name">Dólar Americano</p>
+          <p class="currency-value">US$ 0,00</p>
+        </div>
+      </section>
+    </main>
+     <script src="./scripts.js" defer></script>
+  </body>
+</html>
